@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Jazzy／Gazebo Harmonic 入口：沿用原作者的 model.xacro（is_sim 預設 false，
+     所以不會載入 Gazebo Classic 外掛），再疊上新版 gz 外掛。 -->
+<robot name="nebula" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find amr_forklift)/models/nebula_urdf/model.xacro"/>
+  <xacro:include filename="$(find amr_forklift)/models/nebula_urdf/gz_plugins.xacro"/>
+</robot>

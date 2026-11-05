@@ -1,0 +1,27 @@
+[INFO] [launch]: All log files can be found below /home/peter/.ros/log/2026-11-06-03-37-07-394540-HP1-1666
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [1671]
+[INFO] [robot_state_publisher-2]: process started with pid [1672]
+[INFO] [create-3]: process started with pid [1673]
+[INFO] [parameter_bridge-4]: process started with pid [1675]
+[INFO] [scan_filter_node-5]: process started with pid [1676]
+[robot_state_publisher-2] [INFO] [1793907428.256347744] [robot_state_publisher]: Robot initialized
+[create-3] [INFO] [1793907428.843889507] [ros_gz_sim]: Requesting list of world names.
+[scan_filter_node-5] [INFO] [1793907428.875341439] [scan_filter_node]: Scan Filter Node initialized. Filtering ranges: [-0.35, -0.22] and [0.22, 0.35] radians.
+[parameter_bridge-4] [INFO] [1793907428.929516136] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.931429763] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.933569454] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/left_sensor/scan (gz.msgs.LaserScan) -> /left_sensor/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.934552904] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/right_sensor/scan (gz.msgs.LaserScan) -> /right_sensor/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.935490984] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu/data_raw (gz.msgs.IMU) -> /imu/data_raw (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.936587196] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.939545361] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.941032414] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793907428.941879791] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[create-3] [INFO] [1793907429.635188668] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1793907429.641319098] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-3]: process has finished cleanly [pid 1673]
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="nebula"]/link[@name="base_footprint"]/sensor[@name="imu_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="nebula"]/link[@name="base_footprint"]/sensor[@name="left_sensor_ray"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="nebula"]/link[@name="base_footprint"]/sensor[@name="lidar_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="nebula"]/link[@name="base_footprint"]/sensor[@name="right_sensor_ray"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[parameter_bridge-4] [INFO] [1793907594.563340623] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)

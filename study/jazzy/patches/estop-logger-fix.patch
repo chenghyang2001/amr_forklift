@@ -1,0 +1,13 @@
+diff --git a/amr_forklift/amr_behavior_tree.py b/amr_forklift/amr_behavior_tree.py
+index 35a0f92..488ca9d 100755
+--- a/amr_forklift/amr_behavior_tree.py
++++ b/amr_forklift/amr_behavior_tree.py
+@@ -51,7 +51,7 @@ class EStopAction(py_trees.behaviour.Behaviour):
+             self.cmd_vel_pub = self.node.create_publisher(Twist, 'cmd_vel', 10)
+ 
+     def update(self):
+-        self.logger.critical("EMERGENCY ESTOP: Halting AGV motors!")
++        self.logger.error("EMERGENCY ESTOP: Halting AGV motors!")
+         if self.cmd_vel_pub:
+             msg = Twist()
+             msg.linear.x = 0.0
