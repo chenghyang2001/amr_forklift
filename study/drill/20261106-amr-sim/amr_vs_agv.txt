@@ -1,0 +1,9 @@
+           AGV 自動導引車                 AMR 自主移動機器人
+英文       Automated Guided Vehicle      Autonomous Mobile Robot
+帶路方式   地上磁條/色帶/感應線          雷射+感測器 自己看環境
+地圖       不需要（軌道就是路線）        SLAM 自己畫地圖
+遇到障礙   停下來等                      可以自己繞路
+改路線     重貼磁條（重鋪鐵軌）          電腦上換目標點
+比喻       火車                          計程車司機
+本專案     程式名 AGV / nebula_agv       實際是 AMR（SLAM + Nav2）
+           比賽規定：遇障礙要停下等，不可繞道 → 刻意像 AGV
