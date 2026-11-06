@@ -51,7 +51,7 @@ class EStopAction(py_trees.behaviour.Behaviour):
             self.cmd_vel_pub = self.node.create_publisher(Twist, 'cmd_vel', 10)
 
     def update(self):
-        self.logger.critical("EMERGENCY ESTOP: Halting AGV motors!")
+        self.logger.error("EMERGENCY ESTOP: Halting AGV motors!")
         if self.cmd_vel_pub:
             msg = Twist()
             msg.linear.x = 0.0
@@ -215,6 +215,7 @@ class AGVAutonomyBTNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    py_trees.logging.level = py_trees.logging.Level.INFO  # 預設不印 INFO，看不到巡邏／充電狀態
     node = AGVAutonomyBTNode()
     try:
         rclpy.spin(node)
